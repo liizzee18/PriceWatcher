@@ -80,14 +80,12 @@ public class ItemView extends JPanel {
         y += 20;
         g.drawString(item.getDateAdded(),x,y);
         y+= 30;
-        
+        g.drawImage(50,50,IMAGE_DIR);
     }
 
     /** Return true if the given screen coordinate is inside the viewPage icon. */
     private boolean isViewPageClicked(int x, int y) {
-        //--
-        //-- WRITE YOUR CODE HERE
-        //--
+    	
         return new Rectangle(20, 20, 30, 20).contains(x,  y);
     }
 
